@@ -1,0 +1,352 @@
+.container {
+    // background-image:linear-gradient(to right,rgba(27, 27, 27, 0.85),rgba(27, 27, 27, 0.7)),url('../../img/wave.png'); 
+    background: #181818;
+    ;
+    width: 100%;
+    // height:100%;
+    clip-path: polygon(0 2%, 100% 0%, 100% 98%, 0% 100%);
+    margin-top: -2.6rem;
+}
+
+.wrapper {
+    width: 85%;
+    height: 50rem;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+}
+
+.firstPart {
+    // background: white;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.firstPartWrapper {
+    // background: green;
+    width: 90%;
+    height: 83%;
+    text-align: center;
+}
+
+.firstSection {
+    // background:black;
+    width: 100%;
+    margin: 0 auto;
+    height: 50%;
+    position: relative;
+}
+
+.secondSection {
+    // background:red;
+    width: 100%;
+    margin: 0 auto;
+    height: 50%;
+    position: relative;
+}
+
+.firstAid {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 3%;
+    width: 45%;
+    height: 85%;
+    background: whitesmoke;
+    border-radius: 15px;
+    padding: 25px 30px;
+    -webkit-box-shadow: 2px 2px 10px 0px rgb(247, 247, 247);
+    -moz-box-shadow: 2px 2px 10px 0px rgba(242, 242, 242, 1);
+    box-shadow: 2px 2px 10px 0px rgba(242, 242, 242, 1);
+}
+
+.icon {
+    margin-bottom: 15px;
+}
+
+.categoryName {
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.safeGuarding {
+    position: absolute;
+    top: 0;
+    width: 45%;
+    height: 85%;
+    left: 3%;
+    background: whitesmoke;
+    border-radius: 15px;
+    padding: 25px 30px;
+    -webkit-box-shadow: 2px 2px 10px 0px rgba(242, 242, 242, 1);
+    -moz-box-shadow: 2px 2px 10px 0px rgba(242, 242, 242, 1);
+    box-shadow: 2px 2px 10px 0px rgba(242, 242, 242, 1);
+}
+
+.health {
+    position: absolute;
+    top: -8%;
+    width: 45%;
+    height: 85%;
+    left: 3%;
+    background: whitesmoke;
+    border-radius: 15px;
+    padding: 25px 30px;
+    -webkit-box-shadow: 2px 2px 10px 0px rgba(242, 242, 242, 1);
+    -moz-box-shadow: 2px 2px 10px 0px rgba(242, 242, 242, 1);
+    box-shadow: 2px 2px 10px 0px rgba(242, 242, 242, 1);
+}
+
+.foodHygiene {
+    position: absolute;
+    top: -1%;
+    // transform: translateY(-3%);
+    right: 3%;
+    width: 45%;
+    height: 85%;
+    background: whitesmoke;
+    border-radius: 15px;
+    padding: 25px 30px;
+    -webkit-box-shadow: 2px 2px 10px 0px rgba(242, 242, 242, 1);
+    -moz-box-shadow: 2px 2px 10px 0px rgba(242, 242, 242, 1);
+    box-shadow: 2px 2px 10px 0px rgba(242, 242, 242, 1);
+}
+
+.secondPart {
+    // background: black;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.secondPartWrapper {
+    width: 90%;
+    height: 85%;
+    text-align: center;
+}
+
+.title {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    position: relative;
+    background: #ffbd39;
+    text-transform: uppercase;
+    font-size: 3rem;
+    transform: rotate(-2.5deg);
+    padding: .5rem 1.5rem;
+}
+
+.title::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 3%;
+    left: 0;
+    z-index: -2;
+    background: white;
+    transform: rotate(2.5deg);
+}
+
+.points {
+    position: relative;
+    max-width: 30rem;
+    height: 30rem;
+    background: white;
+    margin: 3rem auto;
+    border: 1px solid rgb(207, 207, 207);
+}
+
+.points::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 102%;
+    background: rgb(233, 230, 230);
+    z-index: -1;
+    top: -1%;
+    transform: rotate(-1.5deg);
+    left: 0;
+}
+
+.paragraph {
+    width: 85%;
+    margin: 30px auto;
+    line-height: 25px;
+    color: rgb(102, 102, 102);
+    text-align: center;
+}
+
+.features {
+    width: 75%;
+    margin: 0 auto;
+    line-height: 32px;
+    list-style-type: lower-roman;
+    font-weight: 600;
+    text-align: start;
+}
+
+@media only screen and (max-width: 1340px) {
+    .title {
+        font-size: 2.5rem;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .wrapper {
+        width: 95%;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .wrapper {
+        width: 90%;
+    }
+
+    .firstPartWrapper {
+        width: 100%;
+    }
+
+    .firstSection {
+        width: 100%;
+    }
+
+    .secondSection {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .wrapper {
+        width: 95%;
+    }
+}
+
+@media only screen and (max-width: 1280px) {
+    .wrapper {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1.2fr 1fr;
+        height: 95rem;
+    }
+
+    .points {
+        height: 28rem;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .features {
+        line-height: 30px;
+    }
+}
+
+@media only screen and (max-width: 549px) {
+    .paragraph {
+        width: 95%;
+    }
+
+    .firstPartWrapper {
+        width: 90%;
+    }
+
+    .firstAid {
+        position: absolute;
+        top: 0;
+        transform: translateY(0%);
+        left: 0;
+        width: 100%;
+        height: 50%;
+        background: whitesmoke;
+        border-radius: 15px;
+    }
+
+    .safeGuarding {
+        position: absolute;
+        top: 50%;
+        width: 100%;
+        height: 50%;
+        left: 0;
+        background: whitesmoke;
+        border-radius: 15px;
+        margin-top: 1rem;
+    }
+
+    .health {
+        position: absolute;
+        top: 0;
+        transform: translateY(0%);
+        left: 0;
+        width: 100%;
+        height: 50%;
+        background: whitesmoke;
+        border-radius: 15px;
+        margin-top: 2rem;
+        padding: 10px 15px;
+    }
+
+    .foodHygiene {
+        position: absolute;
+        top: 50%;
+        width: 100%;
+        height: 50%;
+        left: 0;
+        background: whitesmoke;
+        border-radius: 15px;
+        margin-top: 3rem;
+    }
+
+    .firstAid {
+        padding: 10px 15px;
+    }
+
+    .icon {
+        margin-bottom: 7px;
+        height: 40%;
+    }
+
+    .categoryName {
+        font-size: 18px;
+        margin-bottom: 7px;
+    }
+
+    .icon>img {
+        height: 100%;
+    }
+
+    .categoryDetails {
+        font-size: 14px;
+    }
+
+    .safeGuarding {
+        padding: 10px 15px;
+    }
+
+    .title {
+        font-size: 2rem;
+        padding: .5rem 1.5rem;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .features {
+        line-height: 25px;
+        font-size: 15px;
+    }
+
+    .paragraph {
+        width: 85%;
+        margin: 20px auto;
+        line-height: 22px;
+        font-size: 15px;
+    }
+
+    .title {
+        font-size: 1.8rem;
+    }
+}

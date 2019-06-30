@@ -1,0 +1,58 @@
+.title {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+}
+
+.hamburgerModal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: grid;
+    grid-gap: 3rem;
+    grid-auto-flow: row;
+    justify-items: center;
+    align-content: center;
+    background: rgba(255, 255, 255, .97);
+    color: white;
+    z-index: 9000;
+}
+
+.hamburgerModal h2:hover {
+    cursor: pointer;
+    color: #F9D342;
+}
+
+::placeholder {
+    color: #333333;
+}
+
+.input {
+    font-size: 1.7rem;
+    background: transparent;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid gainsboro;
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-bottom: 7px;
+}
+
+.searchWrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.searchBtn {
+    width: 4rem;
+    margin-top: 1.5rem;
+    background: #ff1214;
+    border: 1px solid #ff1214;
+    font-size: 16px;
+    color: aliceblue;
+    padding: 5px;
+    font-weight: 600;
+    border-radius: 3px;
+}

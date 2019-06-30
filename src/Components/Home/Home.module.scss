@@ -1,0 +1,245 @@
+.home {
+    height: 95vh;
+    width: 100vw;
+    position: relative;
+    background: linear-gradient(to left, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0.5) 3%, rgba(0, 0, 0, 0) 100%);
+    display: flex;
+}
+
+.firstPart {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.firstPartInfo {
+    position: relative;
+    width: 80%;
+    height: 20rem;
+    align-items: center;
+}
+
+.secondPart {
+    flex: 1;
+}
+
+.sloganContainer {
+    width: 100%;
+    transform: translate(-5%, -30%);
+}
+
+.sloganText {
+    text-align: start;
+    margin-left: 6.5%;
+    line-height: 25px;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: absolute;
+    animation: sloganTextAnimation .8s;
+}
+
+.button {
+    position: relative;
+    padding: 15px 15px;
+    border: transparent;
+    font-weight: 500;
+    text-transform: capitalize;
+    background: #39a79f;
+    color: white;
+    font-weight: 700;
+    font-size: 15px;
+    border-radius: 5px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.button:hover {
+    background: linear-gradient(to right, #39a79f, #49c2ba);
+}
+
+.allCourses {
+    position: absolute;
+    left: 5%;
+    width: 25rem;
+    transform: translate(-6.9%, -57%);
+}
+
+.arrow {
+    position: relative;
+    width: 1.5rem;
+    height: 1rem;
+    top: -.3rem;
+    left: .5rem;
+    animation: arrowAnimation .4s infinite alternate;
+}
+
+.text {
+    position: relative;
+    left: .7rem;
+    animation: textAnimation .4s infinite alternate;
+}
+
+.slogan {
+    width: 100%;
+    animation: sloganAnimation .8s;
+}
+
+.secondPart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+.videoContainer {
+    width: 85%;
+}
+
+@keyframes sloganAnimation {
+    0% {
+        opacity: 0;
+        transform: translateX(-10px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes sloganTextAnimation {
+    0% {
+        opacity: 0;
+        transform: translateX(10px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes buttonAnimation {
+    0% {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes arrowAnimation {
+    0% {
+        top: -.3rem;
+        left: .5rem;
+    }
+
+    100% {
+        top: -.5rem;
+        left: 1rem;
+    }
+}
+
+@keyframes textAnimation {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.08);
+    }
+}
+
+@media only screen and (max-width: 1750px) {
+    .allCourses {
+        position: absolute;
+        bottom: -5%;
+        // left:1.5rem;
+        width: 23rem;
+        transform: translate(-6.9%, -57%);
+    }
+
+    .text {
+        width: 9rem;
+    }
+}
+
+@media only screen and (max-width: 1470px) {
+    .button {
+        padding: 10px 10px;
+        font-size: 13px;
+    }
+
+    .allCourses {
+        bottom: 3%;
+        // left:2rem;
+    }
+}
+
+@media only screen and (max-width: 1050px) {
+    .home {
+        background: linear-gradient(to top, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0.63) 3%, rgba(0, 0, 0, 0) 100%);
+    }
+
+    .home {
+        flex-direction: column;
+    }
+
+    .sloganContainer {
+        width: 80%;
+    }
+
+    .allCourses {
+        bottom: -7%;
+        // left:1.5rem;
+    }
+
+    .slogan {
+        width: 85%;
+    }
+
+    .secondPart {
+        align-items: start;
+    }
+
+    .sloganContainer {
+        transform: translate(-5%, -10%);
+    }
+
+}
+
+@media only screen and (max-width:910px) {
+    .allCourses {
+        position: absolute;
+        left: 5%;
+        bottom: 1%;
+        transform: translate(-6.9%, -57%);
+    }
+
+    .button {
+        padding: 8px;
+    }
+
+    .arrow {
+        width: 1rem;
+        height: 1rem;
+        top: -.3rem;
+        left: .5rem;
+    }
+
+    .text {
+        width: 8rem;
+        ;
+    }
+}
+
+@media only screen and (max-width:910px) {
+    .allCourses {
+        bottom: 7%;
+    }
+}

@@ -1,0 +1,279 @@
+.home {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    // background: linear-gradient(to left, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 100%);
+    // background: white;
+    display: flex;
+}
+
+.firstPart {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.firstPartInfo {
+    position: relative;
+    width: 80%;
+    height: 20rem;
+    align-items: center;
+    // background: yellowgreen;
+}
+
+.secondPart {
+    flex: 1;
+}
+
+.sloganContainer {
+    width: 100%;
+    transform: translate(-5%, -30%);
+    position: relative;
+    // background: #49c2ba;
+}
+
+.sloganText {
+    position: absolute;
+    padding-left: 6%;
+    width: 100%;
+    line-height: 30px;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    animation: sloganTextAnimation .8s;
+    // background: red;
+}
+
+.button {
+    padding: 10px 15px;
+    border: transparent;
+    font-weight: 500;
+    text-transform: capitalize;
+    background: #313131;
+    color: white;
+    font-weight: 700;
+    font-size: 15px;
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.button:hover {
+    background: linear-gradient(to right, #313131, #4e4e4e);
+}
+
+.allCourses {
+    position: absolute;
+    margin-left: 1.6rem;
+    width: 25rem;
+}
+
+.arrow {
+    position: relative;
+    width: 1.5rem;
+    height: 1rem;
+    top: -.3rem;
+    left: .5rem;
+    animation: arrowAnimation .4s infinite alternate;
+}
+
+.text {
+    position: relative;
+    left: .7rem;
+    animation: textAnimation .4s infinite alternate;
+}
+
+.slogan {
+    width: 100%;
+    animation: sloganAnimation .8s;
+}
+
+.secondPart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+.videoContainer {
+    width: 40rem;
+}
+
+@keyframes sloganAnimation {
+    0% {
+        opacity: 0;
+        transform: translateX(-10px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes sloganTextAnimation {
+    0% {
+        opacity: 0;
+        transform: translateX(10px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes buttonAnimation {
+    0% {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes arrowAnimation {
+    0% {
+        top: -.3rem;
+        left: .5rem;
+    }
+
+    100% {
+        top: -.5rem;
+        left: 1rem;
+    }
+}
+
+@keyframes textAnimation {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.08);
+    }
+}
+
+@media only screen and (max-width: 1750px) {
+    .allCourses {
+        position: absolute;
+        bottom: -5%;
+        width: 23rem;
+        transform: translate(-6.9%, -57%);
+    }
+
+    .text {
+        width: 9rem;
+    }
+}
+
+@media only screen and (max-width: 1470px) {
+
+    // .button {
+    //     padding: 10px 10px;
+    //     font-size: 13px;
+    // }
+    .allCourses {
+        bottom: 1.5%;
+        // left:2rem;
+    }
+}
+
+@media only screen and (max-width: 1050px) {
+    .home {
+        flex-direction: column;
+    }
+
+
+    .sloganContainer {
+        width: 80%;
+    }
+
+    .allCourses {
+        bottom: -7%;
+    }
+
+    .slogan {
+        width: 78%;
+    }
+
+    .secondPart {
+        align-items: start;
+        justify-content: center;
+    }
+
+    .sloganContainer {
+        transform: translate(-5%, -10%);
+    }
+
+    .sloganText {
+        padding-left: 4.9%;
+    }
+
+    .videoContainer {
+        max-width: 30rem;
+    }
+
+
+}
+
+@media only screen and (max-width:910px) {
+    .allCourses {
+        bottom: 5%;
+    }
+
+    .button {
+        padding: 8px;
+    }
+
+    // .text {
+    //     width: 8rem;
+    //     ;
+    // }
+}
+
+@media only screen and (max-width:910px) {
+    .allCourses {
+        bottom: 1%;
+    }
+}
+
+@media only screen and (max-width:600px) {
+    .sloganContainer {
+        width: 100%;
+    }
+
+    .slogan {
+        width: 110%;
+    }
+
+    .sloganText {
+        font-size: 15px;
+        padding-left: 7%;
+    }
+
+    .allCourses {
+        bottom: -4%;
+        padding-left: 1%;
+    }
+
+    .arrow {
+        position: relative;
+        width: 1rem;
+        height: .6rem;
+    }
+
+    .button {
+        padding: 8px 13px;
+        font-size: 12px;
+
+    }
+
+    .text {
+        width: 7.5rem;
+    }
+}
